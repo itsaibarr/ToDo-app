@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    color: #fff;
+    background: #272727;
+    margin: 0;
+    height: 100vh;                /* высота = весь экран */
+    display: flex;
+    justify-content: center;      /* по горизонтали */
+    align-items: center;          /* по вертикали */
+    background: #1e1e1e; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.toDo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 60px;
+    margin-right: 200px;
+}
+
+ul {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: start;
+}
+
+input {
+    all: unset;
+    border: none;
+    background: none;
+}
+
+input::placeholder {
+    color: #707070;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.note-area {
+    all: unset;
+    width: 700px;
+    height: 500px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 23px,
+      #555 24px
+    );
+    background-position-y: 8px; /* смещение линий вниз */
+    border: none;
+    outline: none;
+    resize: none;
+    line-height: 24px; /* совпадает с шагом линий */
+    white-space: pre-wrap; /* перенос текста */
+    word-wrap: break-word; /* если слово слишком длинное */
+    overflow-x: hidden;    /* убираем горизонтальный скролл */
+}
+
+.notes h1 {
+    margin-bottom: 40px;
+}
