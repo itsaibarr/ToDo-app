@@ -19,7 +19,7 @@ body {
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: start;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h1 {
     flex-direction: column;
     align-items: start;
     row-gap: 60px;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 ul {
@@ -82,8 +82,16 @@ input::placeholder {
     white-space: pre-wrap; /* перенос текста */
     word-wrap: break-word; /* если слово слишком длинное */
     overflow-x: hidden;    /* убираем горизонтальный скролл */
+    margin-right: 100px;
 }
 
 .notes h1 {
     margin-bottom: 40px;
+}
+
+.day input {
+    border-bottom: 1px solid #fff;
+    margin-top: 50px;
+    font-size: 30px;
+    width: 120px;
 }
